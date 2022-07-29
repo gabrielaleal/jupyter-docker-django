@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     "import_export",
     "rest_framework",
     "common",
-    "restaurants",
     "users",
     "django_extensions",
 ]
