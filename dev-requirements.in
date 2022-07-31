@@ -10,3 +10,5 @@ pylint-django
 prospector[with_vulture]
 safety
 django-silk
+pygments
+sqlparse
