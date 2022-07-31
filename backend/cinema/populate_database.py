@@ -71,6 +71,7 @@ def create_movies_relations():
     ]
     movie.cast.set(movie_cast)
 
+
 def create_movies_nominations():
     ...
 

@@ -20,6 +20,7 @@ class Movie(models.Model):
     director = models.ForeignKey(
         Person, related_name="movies_directed", null=True, on_delete=models.SET_NULL
     )
+    # budget
 
 
 class Nomination(models.Model):
