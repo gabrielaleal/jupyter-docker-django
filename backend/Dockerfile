@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install gcc build-essential libpq-dev -y && \
 
 # install python dependencies
 ADD *requirements.in /home/user/app/backend/
-RUN pip-compile requirements.in > requirements.txt && \
+RUN pip install --upgrade pip && \
+    pip-compile requirements.in > requirements.txt && \
     pip-compile dev-requirements.in > dev-requirements.txt
 
 RUN pip install -r requirements.txt && \
