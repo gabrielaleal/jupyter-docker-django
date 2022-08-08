@@ -1,5 +1,4 @@
 from datetime import datetime
-from venv import create
 
 from django.utils.timezone import utc
 
@@ -45,14 +44,14 @@ def create_movies():
         [
             Movie(
                 title="Deep Water",
-                sinopsis=(
+                synopsis=(
                     "Vic and Melinda, a married couple, fall out of love with each other and the "
                     "latter pursues extramarital affairs. However, when her lovers all disappear, "
                     "the suspicion falls on Vic."
                 ),
                 genre=MOVIE_GENRES.drama,
                 release_date=datetime(2022, 4, 18, 3, 59, 0, 99999, tzinfo=utc),
-                available_on_netflix=False,
+                is_available_on_netflix=False,
                 imdb_rate=5.4,
                 director=Person.objects.get(name="Adrian Lyne"),
             )
