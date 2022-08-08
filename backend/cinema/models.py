@@ -5,29 +5,35 @@ from cinema.choices import MOVIE_GENRES
 
 class Person(models.Model):
     name = models.CharField(max_length=255)
-    birth_date = models.DateTimeField(null=True)
-    death_date = models.DateTimeField(null=True)
+    birth_date = models.DateField(null=True)
+    death_date = models.DateField(null=True)
 
 
 class Movie(models.Model):
     title = models.CharField(max_length=255)
-    sinopsis = models.TextField()
+    synopsis = models.TextField(blank=True)
     genre = models.CharField(choices=MOVIE_GENRES, max_length=255)
-    release_date = models.DateTimeField(null=True)
-    available_on_netflix = models.BooleanField(default=False)
-    imdb_rate = models.FloatField()
+    release_date = models.DateField(null=True)
+    is_available_on_netflix = models.BooleanField(default=False)
+    imdb_rate = models.FloatField(null=True)
     cast = models.ManyToManyField(Person, related_name="movies_starred")
     director = models.ForeignKey(
         Person, related_name="movies_directed", null=True, on_delete=models.SET_NULL
     )
-    # budget
+    budget = models.FloatField(null=True)
+
+
+class Award(models.Model):
+    name = models.CharField(max_length=255)
+    popular_name = models.CharField(max_length=255, blank=True)
+    first_presentation_date = models.DateField(null=True)
 
 
 class Nomination(models.Model):
-    award = models.CharField(max_length=255)
+    award = models.ForeignKey(Award, related_name="+", on_delete=models.CASCADE)
     category = models.CharField(max_length=255)
-    year = models.IntegerField()
-    winner = models.BooleanField(default=False)
+    year = models.IntegerField(null=True)
+    is_winner = models.BooleanField(default=False)
 
     class Meta:
         abstract = True
