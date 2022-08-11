@@ -7,7 +7,7 @@ MOVIE_GENRES = Choices(
     ("drama", "Drama"),
     ("fantasy", "Fantasy"),
     ("horror", "Horror"),
-    ("mistery", "Mistery"),
+    ("mystery", "Mystery"),
     ("romance", "Romance"),
     ("thriller", "Thriller"),
     ("science_fiction", "Science-Fiction"),
