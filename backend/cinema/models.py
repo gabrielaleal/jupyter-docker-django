@@ -26,7 +26,7 @@ class Movie(models.Model):
 class Award(models.Model):
     name = models.CharField(max_length=255)
     popular_name = models.CharField(max_length=255, blank=True)
-    first_presentation_date = models.DateField(null=True)
+    first_awarded_year = models.IntegerField(null=True)
 
 
 class Nomination(models.Model):
@@ -45,3 +45,4 @@ class MovieNomination(Nomination):
 
 class PersonNomination(Nomination):
     person = models.ForeignKey(Person, related_name="nominations", on_delete=models.CASCADE)
+    movie = models.ForeignKey(Movie, related_name="people_nominations", on_delete=models.CASCADE)
