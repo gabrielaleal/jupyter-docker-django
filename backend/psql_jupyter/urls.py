@@ -19,6 +19,7 @@ urlpatterns = [
     path("admin/", admin.site.urls, name="admin"),
     path("jsreverse/", django_js_reverse.views.urls_js, name="js_reverse"),
     path("api/", include(router.urls), name="api"),
+    re_path(r"^cinema/", include("cinema.urls"), name="cinema"),
 ]
 
 if "silk" in settings.INSTALLED_APPS:

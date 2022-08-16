@@ -1,0 +1,14 @@
+<h2>Movies List</h2>
+{% for movie in movies %}
+   <div style="padding: 5px 0; border-bottom: 1px solid palevioletred;">
+       <div style="font-weight: 600;">{{ movie.title }}</div>
+       <small>Directed by: {{ movie.director.name }}</small>
+       <br>
+       Starring:
+       <ul>
+        {% for artist in movie.cast.all %}
+            <li>{{ artist.name }}</li>
+        {% endfor %}
+       </ul>
+   </div>
+{% endfor %}
