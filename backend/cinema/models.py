@@ -8,6 +8,9 @@ class Person(models.Model):
     birth_date = models.DateField(null=True)
     death_date = models.DateField(null=True)
 
+    def __str__(self):
+        return self.name
+
 
 class Movie(models.Model):
     title = models.CharField(max_length=255)
@@ -22,11 +25,17 @@ class Movie(models.Model):
     )
     budget = models.FloatField(null=True)
 
+    def __str__(self):
+        return f"{self.title}"
+
 
 class Award(models.Model):
     name = models.CharField(max_length=255)
     popular_name = models.CharField(max_length=255, blank=True)
     first_awarded_year = models.IntegerField(null=True)
+
+    def __str__(self):
+        return f"{self.name} ({self.popular_name})"
 
 
 class Nomination(models.Model):
@@ -42,7 +51,13 @@ class Nomination(models.Model):
 class MovieNomination(Nomination):
     movie = models.ForeignKey(Movie, related_name="nominations", on_delete=models.CASCADE)
 
+    def __str__(self):
+        return f"{self.movie.title} - {self.category} ({self.year}) - {self.award.popular_name}"
+
 
 class PersonNomination(Nomination):
     person = models.ForeignKey(Person, related_name="nominations", on_delete=models.CASCADE)
     movie = models.ForeignKey(Movie, related_name="people_nominations", on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.person.name} - {self.category} ({self.year}) - {self.award.popular_name}"
