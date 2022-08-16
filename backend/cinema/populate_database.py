@@ -156,6 +156,113 @@ def create_actors():
                 name="Dakota Fanning",
                 birth_date=datetime(1994, 2, 23, 3, 59, 0, 99999, tzinfo=utc),
             ),
+            Person(
+                name="Chris Evans",
+                birth_date=datetime(1981, 6, 13, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Daniel Craig",
+                birth_date=datetime(1968, 3, 2, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Jamie Lee Curtis",
+                birth_date=datetime(1958, 11, 22, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Christopher Plummer",
+                birth_date=datetime(1929, 12, 13, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Katherine Langford",
+                birth_date=datetime(1996, 4, 29, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Mark Ruffalo",
+                birth_date=datetime(1967, 11, 22, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Ben Kingsley",
+                birth_date=datetime(1943, 12, 31, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Michelle Williams",
+                birth_date=datetime(1980, 9, 9, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Max von Sydow",
+                birth_date=datetime(1929, 4, 10, 3, 59, 0, 99999, tzinfo=utc),
+                death_date=datetime(2020, 3, 8, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Patricia Clarkson",
+                birth_date=datetime(1959, 12, 29, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Robert De Niro",
+                birth_date=datetime(1943, 8, 17, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Famke Janssen",
+                birth_date=datetime(1964, 11, 5, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Jennifer Garner",
+                birth_date=datetime(1972, 4, 17, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Christa B. Allen",
+                birth_date=datetime(1991, 11, 11, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Judy Greer",
+                birth_date=datetime(1975, 7, 20, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Andy Serkis",
+                birth_date=datetime(1964, 4, 20, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Jennifer Lawrence",
+                birth_date=datetime(1990, 8, 15, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Timothée Chalamet",
+                birth_date=datetime(1995, 12, 27, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Cate Blanchett",
+                birth_date=datetime(1969, 5, 14, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Meryl Streep",
+                birth_date=datetime(1949, 6, 22, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Ariana Grande",
+                birth_date=datetime(1993, 6, 26, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Ewan McGregor",
+                birth_date=datetime(1971, 3, 31, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Albert Finney",
+                birth_date=datetime(1936, 5, 9, 3, 59, 0, 99999, tzinfo=utc),
+                death_date=datetime(2019, 2, 7, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Helena Bonham Carter",
+                birth_date=datetime(1966, 5, 26, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Billy Crudup",
+                birth_date=datetime(1968, 7, 8, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Matthew McGrory",
+                birth_date=datetime(1973, 5, 17, 3, 59, 0, 99999, tzinfo=utc),
+                death_date=datetime(2005, 8, 9, 3, 59, 0, 99999, tzinfo=utc),
+            ),
         ]
     )
 
@@ -176,6 +283,27 @@ def create_directors():
             Person(
                 name="Quentin Tarantino",
                 birth_date=datetime(1963, 3, 27, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Rian Johnson",
+                birth_date=datetime(1973, 12, 17, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Martin Scorsese",
+                birth_date=datetime(1942, 11, 17, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="John Polson",
+                birth_date=datetime(1965, 9, 6, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Gary Winick",
+                birth_date=datetime(1961, 3, 31, 3, 59, 0, 99999, tzinfo=utc),
+                death_date=datetime(2011, 2, 27, 3, 59, 0, 99999, tzinfo=utc),
+            ),
+            Person(
+                name="Adam McKay",
+                birth_date=datetime(1968, 4, 17, 3, 59, 0, 99999, tzinfo=utc),
             ),
         ]
     )
@@ -301,6 +429,69 @@ def create_movies():
                 imdb_rate=7.9,
                 director=Person.objects.get(name="Rian Johnson"),
             ),
+            Movie(
+                title="Shutter Island",
+                synopsis=(
+                    "Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a "
+                    "remote island in order to investigate the disappearance of a patient, where "
+                    "Teddy uncovers a shocking truth about the place."
+                ),
+                genre=MOVIE_GENRES.mystery,
+                release_date=datetime(2010, 3, 12, 3, 59, 0, 99999, tzinfo=utc),
+                is_available_on_netflix=True,
+                imdb_rate=8.2,
+                director=Person.objects.get(name="Martin Scorsese"),
+            ),
+            Movie(
+                title="Hide and Seek",
+                synopsis=(
+                    "After his wife's death, David moves to Upstate New York with his daughter "
+                    "Emily, who makes an imaginary friend named Charlie. But soon unexplained "
+                    "events begin taking place in their house."
+                ),
+                genre=MOVIE_GENRES.mystery,
+                release_date=datetime(2005, 1, 28, 3, 59, 0, 99999, tzinfo=utc),
+                is_available_on_netflix=True,
+                imdb_rate=5.9,
+                director=Person.objects.get(name="John Polson"),
+            ),
+            Movie(
+                title="13 Going on 30",
+                synopsis=(
+                    "Jenna Rink makes an unusual wish on her birthday. Miraculously, her wish comes"
+                    " true and the 13-year-old Jenna wakes up the next day as a 30-year-old woman."
+                ),
+                genre=MOVIE_GENRES.romance,
+                release_date=datetime(2004, 4, 23, 3, 59, 0, 99999, tzinfo=utc),
+                is_available_on_netflix=True,
+                imdb_rate=6.2,
+                director=Person.objects.get(name="Gary Winick"),
+            ),
+            Movie(
+                title="Don't Look Up",
+                synopsis=(
+                    "Two low-level astronomers must go on a giant media tour to warn mankind of an "
+                    "approaching comet that will destroy planet Earth."
+                ),
+                genre=MOVIE_GENRES.comedy,
+                release_date=datetime(2021, 12, 9, 3, 59, 0, 99999, tzinfo=utc),
+                is_available_on_netflix=True,
+                imdb_rate=7.2,
+                director=Person.objects.get(name="Adam McKay"),
+            ),
+            Movie(
+                title="Big Fish",
+                synopsis=(
+                    "Will Bloom returns home to care for his dying father, who had a penchant for "
+                    "telling unbelievable stories. After he passes away, Will tries to find out if "
+                    "his tales were really true."
+                ),
+                genre=MOVIE_GENRES.fantasy,
+                release_date=datetime(2004, 2, 20, 3, 59, 0, 99999, tzinfo=utc),
+                is_available_on_netflix=False,
+                imdb_rate=8,
+                director=Person.objects.get(name="Tim Burton"),
+            ),
         ]
     )
 
@@ -392,6 +583,68 @@ def create_movies_relations():
         Person.objects.get(name="Margaret Qualley"),
         Person.objects.get(name="Austin Butler"),
         Person.objects.get(name="Dakota Fanning"),
+    ]
+    movie.cast.set(movie_cast)
+
+    movie = Movie.objects.get(title="Knives Out")
+    movie_cast = [
+        Person.objects.get(name="Chris Evans"),
+        Person.objects.get(name="Ana de Armas"),
+        Person.objects.get(name="Daniel Craig"),
+        Person.objects.get(name="Jamie Lee Curtis"),
+        Person.objects.get(name="Christopher Plummer"),
+        Person.objects.get(name="Katherine Langford"),
+    ]
+    movie.cast.set(movie_cast)
+
+    movie = Movie.objects.get(title="Shutter Island")
+    movie_cast = [
+        Person.objects.get(name="Leonardo Dicaprio"),
+        Person.objects.get(name="Mark Ruffalo"),
+        Person.objects.get(name="Ben Kingsley"),
+        Person.objects.get(name="Michelle Williams"),
+        Person.objects.get(name="Max von Sydow"),
+        Person.objects.get(name="Patricia Clarkson"),
+    ]
+    movie.cast.set(movie_cast)
+
+    movie = Movie.objects.get(title="Hide and Seek")
+    movie_cast = [
+        Person.objects.get(name="Dakota Fanning"),
+        Person.objects.get(name="Robert De Niro"),
+        Person.objects.get(name="Famke Janssen"),
+    ]
+    movie.cast.set(movie_cast)
+
+    movie = Movie.objects.get(title="13 Going on 30")
+    movie_cast = [
+        Person.objects.get(name="Jennifer Garner"),
+        Person.objects.get(name="Mark Ruffalo"),
+        Person.objects.get(name="Christa B. Allen"),
+        Person.objects.get(name="Judy Greer"),
+        Person.objects.get(name="Andy Serkis"),
+    ]
+    movie.cast.set(movie_cast)
+
+    movie = Movie.objects.get(title="Don't Look Up")
+    movie_cast = [
+        Person.objects.get(name="Leonardo Dicaprio"),
+        Person.objects.get(name="Jennifer Lawrence"),
+        Person.objects.get(name="Timothée Chalamet"),
+        Person.objects.get(name="Cate Blanchett"),
+        Person.objects.get(name="Meryl Streep"),
+        Person.objects.get(name="Ariana Grande"),
+    ]
+    movie.cast.set(movie_cast)
+
+    movie = Movie.objects.get(title="Big Fish")
+    movie_cast = [
+        Person.objects.get(name="Ewan McGregor"),
+        Person.objects.get(name="Albert Finney"),
+        Person.objects.get(name="Helena Bonham Carter"),
+        Person.objects.get(name="Billy Crudup"),
+        Person.objects.get(name="Danny DeVito"),
+        Person.objects.get(name="Matthew McGrory"),
     ]
     movie.cast.set(movie_cast)
 
@@ -658,6 +911,83 @@ def create_movies_nominations():
                 year=2020,
                 is_winner=False,
             ),
+            MovieNomination(
+                award=Award.objects.get(name="Academy Awards"),
+                movie=Movie.objects.get(title="Don't Look Up"),
+                category="Best Motion Picture of the Year",
+                year=2022,
+                is_winner=False,
+            ),
+            MovieNomination(
+                award=Award.objects.get(name="Academy Awards"),
+                movie=Movie.objects.get(title="Don't Look Up"),
+                category="Best Achievement in Film Editing",
+                year=2022,
+                is_winner=False,
+            ),
+            MovieNomination(
+                award=Award.objects.get(name="Academy Awards"),
+                movie=Movie.objects.get(title="Don't Look Up"),
+                category="Best Achievement in Music Written for Motion Pictures (Original Score)",
+                year=2022,
+                is_winner=False,
+            ),
+            MovieNomination(
+                award=Award.objects.get(name="British Academy Film Awards"),
+                movie=Movie.objects.get(title="Don't Look Up"),
+                category="Best Film",
+                year=2022,
+                is_winner=False,
+            ),
+            MovieNomination(
+                award=Award.objects.get(name="British Academy Film Awards"),
+                movie=Movie.objects.get(title="Don't Look Up"),
+                category="Original Score",
+                year=2022,
+                is_winner=False,
+            ),
+            MovieNomination(
+                award=Award.objects.get(name="Academy Awards"),
+                movie=Movie.objects.get(title="Big Fish"),
+                category="Best Music, Original Score",
+                year=2004,
+                is_winner=False,
+            ),
+            MovieNomination(
+                award=Award.objects.get(name="British Academy Film Awards"),
+                movie=Movie.objects.get(title="Big Fish"),
+                category="Best Film",
+                year=2004,
+                is_winner=False,
+            ),
+            MovieNomination(
+                award=Award.objects.get(name="British Academy Film Awards"),
+                movie=Movie.objects.get(title="Big Fish"),
+                category="Best Screenplay - Adapted",
+                year=2004,
+                is_winner=False,
+            ),
+            MovieNomination(
+                award=Award.objects.get(name="British Academy Film Awards"),
+                movie=Movie.objects.get(title="Big Fish"),
+                category="Best Production Design",
+                year=2004,
+                is_winner=False,
+            ),
+            MovieNomination(
+                award=Award.objects.get(name="British Academy Film Awards"),
+                movie=Movie.objects.get(title="Big Fish"),
+                category="Best Achievement in Special Visual Effects",
+                year=2004,
+                is_winner=False,
+            ),
+            MovieNomination(
+                award=Award.objects.get(name="British Academy Film Awards"),
+                movie=Movie.objects.get(title="Big Fish"),
+                category="Best Make Up/Hair",
+                year=2004,
+                is_winner=False,
+            ),
         ]
     )
 
@@ -788,9 +1118,49 @@ def create_people_nominations():
             PersonNomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
-                person=Person.objects.get(name="Leonardo DiCaprio"),
+                person=Person.objects.get(name="Leonardo Dicaprio"),
                 category="Best Performance by an Actor in a Leading Role",
                 year=2020,
+                is_winner=False,
+            ),
+            PersonNomination(
+                award=Award.objects.get(name="MTV Movie + TV Awards"),
+                movie=Movie.objects.get(title="Hide and Seek"),
+                person=Person.objects.get(name="Dakota Fanning"),
+                category="Best Frightened Performance",
+                year=2005,
+                is_winner=True,
+            ),
+            PersonNomination(
+                award=Award.objects.get(name="Academy Awards"),
+                movie=Movie.objects.get(title="Don't Look Up"),
+                person=Person.objects.get(name="Adam McKay"),
+                category="Best Original Screenplay",
+                year=2022,
+                is_winner=False,
+            ),
+            PersonNomination(
+                award=Award.objects.get(name="British Academy Film Awards"),
+                movie=Movie.objects.get(title="Don't Look Up"),
+                person=Person.objects.get(name="Adam McKay"),
+                category="Best Screenplay (Original)",
+                year=2022,
+                is_winner=False,
+            ),
+            PersonNomination(
+                award=Award.objects.get(name="British Academy Film Awards"),
+                movie=Movie.objects.get(title="Don't Look Up"),
+                person=Person.objects.get(name="Leonardo Dicaprio"),
+                category="Best Leading Actor",
+                year=2022,
+                is_winner=False,
+            ),
+            PersonNomination(
+                award=Award.objects.get(name="British Academy Film Awards"),
+                movie=Movie.objects.get(title="Big Fish"),
+                person=Person.objects.get(name="Albert Finney"),
+                category="Best Performance by an Actor in a Supporting Role",
+                year=2004,
                 is_winner=False,
             ),
         ]
@@ -799,24 +1169,26 @@ def create_people_nominations():
 
 def create_awards():
     Award.objects.bulk_create(
-        Award(
-            name="Academy Awards",
-            popular_name="the Oscars",
-            first_awarded_year=1929,
-        ),
-        Award(
-            name="Golden Globe Awards",
-            first_awarded_year=1944,
-        ),
-        Award(
-            name="British Academy Film Awards",
-            popular_name="BAFTA Film Awards",
-            first_awarded_year=1949,
-        ),
-        Award(
-            name="American Comedy Awards",
-            first_awarded_year=1984,
-        ),
+        [
+            Award(
+                name="Academy Awards",
+                popular_name="the Oscars",
+                first_awarded_year=1929,
+            ),
+            Award(
+                name="British Academy Film Awards",
+                popular_name="BAFTA Film Awards",
+                first_awarded_year=1949,
+            ),
+            Award(
+                name="American Comedy Awards",
+                first_awarded_year=1984,
+            ),
+            Award(
+                name="MTV Movie + TV Awards",
+                first_awarded_year=1992,
+            ),
+        ]
     )
 
 
@@ -828,3 +1200,10 @@ def populate_database():
     Movie.objects.all().delete()
     create_movies()
     create_movies_relations()
+
+    Award.objects.all().delete()
+    MovieNomination.objects.all().delete()
+    PersonNomination.objects.all().delete()
+    create_awards()
+    create_movies_nominations()
+    create_people_nominations()
