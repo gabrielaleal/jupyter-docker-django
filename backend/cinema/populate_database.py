@@ -650,352 +650,9 @@ def create_movies_relations():
 
 
 def create_movies_nominations():
-    MovieNomination.objects.bulk_create(
+    Nomination.objects.bulk_create(
         [
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Batman"),
-                category="Best Art Direction-Set Decoration",
-                year=1990,
-                is_winner=True,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Batman Returns"),
-                category="Best Effects, Visual Effects",
-                year=1993,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Batman Returns"),
-                category="Best Makeup",
-                year=1993,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Batman Returns"),
-                category="Best Make Up Artist",
-                year=1993,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Batman Returns"),
-                category="Best Special Effects",
-                year=1993,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Batman Begins"),
-                category="Best Achievement in Cinematography",
-                year=2006,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Batman Begins"),
-                category="Best Production Design",
-                year=2006,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Batman Begins"),
-                category="Best Sound",
-                year=2006,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Batman Begins"),
-                category="Best Achievement in Special Visual Effects",
-                year=2006,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Achievement in Sound Editing",
-                year=2009,
-                is_winner=True,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Achievement in Cinematography",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Achievement in Film Editing",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Achievement in Art Direction",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Achievement in Makeup",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Achievement in Sound Mixing",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Achievement in Visual Effects",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Cinematography",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Editing",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Production Design",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Costume Design",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Sound",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Special Visual Effects",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="The Dark Knight"),
-                category="Best Make Up & Hair",
-                year=2009,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="The Dark Knight Rises"),
-                category="Best Special Visual Effects",
-                year=2013,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Inglourious Basterds"),
-                category="Best Cinematography",
-                year=2010,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Inglourious Basterds"),
-                category="Best Editing",
-                year=2010,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Inglourious Basterds"),
-                category="Best Production Design",
-                year=2010,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Inglourious Basterds"),
-                category="Best Motion Picture of the Year",
-                year=2010,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Inglourious Basterds"),
-                category="Best Achievement in Cinematography",
-                year=2010,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Inglourious Basterds"),
-                category="Best Achievement in Film Editing",
-                year=2010,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Inglourious Basterds"),
-                category="Best Achievement in Sound Mixing",
-                year=2010,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Inglourious Basterds"),
-                category="Best Achievement in Sound Editing",
-                year=2010,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
-                category="Best Achievement in Production Design",
-                year=2020,
-                is_winner=True,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
-                category="Best Achievement in Cinematography",
-                year=2020,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
-                category="Best Achievement in Costume Design",
-                year=2020,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
-                category="Best Achievement in Sound Mixing",
-                year=2020,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
-                category="Best Achievement in Sound Editing",
-                year=2020,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Don't Look Up"),
-                category="Best Motion Picture of the Year",
-                year=2022,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Don't Look Up"),
-                category="Best Achievement in Film Editing",
-                year=2022,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Don't Look Up"),
-                category="Best Achievement in Music Written for Motion Pictures (Original Score)",
-                year=2022,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Don't Look Up"),
-                category="Best Film",
-                year=2022,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Don't Look Up"),
-                category="Original Score",
-                year=2022,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="Academy Awards"),
-                movie=Movie.objects.get(title="Big Fish"),
-                category="Best Music, Original Score",
-                year=2004,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Big Fish"),
-                category="Best Film",
-                year=2004,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Big Fish"),
-                category="Best Screenplay - Adapted",
-                year=2004,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Big Fish"),
-                category="Best Production Design",
-                year=2004,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Big Fish"),
-                category="Best Achievement in Special Visual Effects",
-                year=2004,
-                is_winner=False,
-            ),
-            MovieNomination(
-                award=Award.objects.get(name="British Academy Film Awards"),
-                movie=Movie.objects.get(title="Big Fish"),
-                category="Best Make Up/Hair",
-                year=2004,
-                is_winner=False,
-            ),
-        ]
-    )
-
-
-def create_people_nominations():
-    PersonNomination.objects.bulk_create(
-        [
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="British Academy Film Awards"),
                 movie=Movie.objects.get(title="The Dark Knight"),
                 person=Person.objects.get(name="Heath Ledger"),
@@ -1003,7 +660,7 @@ def create_people_nominations():
                 year=2009,
                 is_winner=True,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="The Dark Knight"),
                 person=Person.objects.get(name="Heath Ledger"),
@@ -1011,7 +668,7 @@ def create_people_nominations():
                 year=2009,
                 is_winner=True,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="British Academy Film Awards"),
                 person=Person.objects.get(name="Jack Nicholson"),
                 movie=Movie.objects.get(title="Batman"),
@@ -1019,7 +676,7 @@ def create_people_nominations():
                 year=1990,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="American Comedy Awards"),
                 person=Person.objects.get(name="Jack Nicholson"),
                 movie=Movie.objects.get(title="Batman"),
@@ -1027,7 +684,7 @@ def create_people_nominations():
                 year=1990,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="Inglourious Basterds"),
                 person=Person.objects.get(name="Christoph Waltz"),
@@ -1035,7 +692,7 @@ def create_people_nominations():
                 year=2010,
                 is_winner=True,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="British Academy Film Awards"),
                 movie=Movie.objects.get(title="Inglourious Basterds"),
                 person=Person.objects.get(name="Christoph Waltz"),
@@ -1043,7 +700,7 @@ def create_people_nominations():
                 year=2010,
                 is_winner=True,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="British Academy Film Awards"),
                 movie=Movie.objects.get(title="Inglourious Basterds"),
                 person=Person.objects.get(name="Quentin Tarantino"),
@@ -1051,7 +708,7 @@ def create_people_nominations():
                 year=2010,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="British Academy Film Awards"),
                 movie=Movie.objects.get(title="Inglourious Basterds"),
                 person=Person.objects.get(name="Quentin Tarantino"),
@@ -1059,7 +716,7 @@ def create_people_nominations():
                 year=2010,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="Inglourious Basterds"),
                 person=Person.objects.get(name="Quentin Tarantino"),
@@ -1067,7 +724,7 @@ def create_people_nominations():
                 year=2010,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="Inglourious Basterds"),
                 person=Person.objects.get(name="Quentin Tarantino"),
@@ -1075,7 +732,7 @@ def create_people_nominations():
                 year=2010,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
                 person=Person.objects.get(name="Brad Pitt"),
@@ -1083,7 +740,7 @@ def create_people_nominations():
                 year=2020,
                 is_winner=True,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="British Academy Film Awards"),
                 movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
                 person=Person.objects.get(name="Brad Pitt"),
@@ -1091,7 +748,7 @@ def create_people_nominations():
                 year=2020,
                 is_winner=True,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
                 person=Person.objects.get(name="Quentin Tarantino"),
@@ -1099,7 +756,7 @@ def create_people_nominations():
                 year=2020,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
                 person=Person.objects.get(name="Quentin Tarantino"),
@@ -1107,7 +764,7 @@ def create_people_nominations():
                 year=2020,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
                 person=Person.objects.get(name="Quentin Tarantino"),
@@ -1115,7 +772,7 @@ def create_people_nominations():
                 year=2020,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="Once Upon a Time in... Hollywood"),
                 person=Person.objects.get(name="Leonardo Dicaprio"),
@@ -1123,7 +780,7 @@ def create_people_nominations():
                 year=2020,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="MTV Movie + TV Awards"),
                 movie=Movie.objects.get(title="Hide and Seek"),
                 person=Person.objects.get(name="Dakota Fanning"),
@@ -1131,7 +788,7 @@ def create_people_nominations():
                 year=2005,
                 is_winner=True,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="Academy Awards"),
                 movie=Movie.objects.get(title="Don't Look Up"),
                 person=Person.objects.get(name="Adam McKay"),
@@ -1139,7 +796,7 @@ def create_people_nominations():
                 year=2022,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="British Academy Film Awards"),
                 movie=Movie.objects.get(title="Don't Look Up"),
                 person=Person.objects.get(name="Adam McKay"),
@@ -1147,7 +804,7 @@ def create_people_nominations():
                 year=2022,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="British Academy Film Awards"),
                 movie=Movie.objects.get(title="Don't Look Up"),
                 person=Person.objects.get(name="Leonardo Dicaprio"),
@@ -1155,7 +812,7 @@ def create_people_nominations():
                 year=2022,
                 is_winner=False,
             ),
-            PersonNomination(
+            Nomination(
                 award=Award.objects.get(name="British Academy Film Awards"),
                 movie=Movie.objects.get(title="Big Fish"),
                 person=Person.objects.get(name="Albert Finney"),
@@ -1170,24 +827,10 @@ def create_people_nominations():
 def create_awards():
     Award.objects.bulk_create(
         [
-            Award(
-                name="Academy Awards",
-                popular_name="the Oscars",
-                first_awarded_year=1929,
-            ),
-            Award(
-                name="British Academy Film Awards",
-                popular_name="BAFTA Film Awards",
-                first_awarded_year=1949,
-            ),
-            Award(
-                name="American Comedy Awards",
-                first_awarded_year=1984,
-            ),
-            Award(
-                name="MTV Movie + TV Awards",
-                first_awarded_year=1992,
-            ),
+            Award(name="Academy Awards"),
+            Award(name="British Academy Film Awards"),
+            Award(name="American Comedy Awards"),
+            Award(name="MTV Movie + TV Awards"),
         ]
     )
 
@@ -1202,8 +845,7 @@ def populate_database():
     create_movies_relations()
 
     Award.objects.all().delete()
-    MovieNomination.objects.all().delete()
-    PersonNomination.objects.all().delete()
     create_awards()
+
+    Nomination.objects.all().delete()
     create_movies_nominations()
-    create_people_nominations()
