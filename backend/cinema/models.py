@@ -5,8 +5,6 @@ from cinema.choices import MOVIE_GENRES
 
 class Person(models.Model):
     name = models.CharField(max_length=255)
-    birth_date = models.DateField(null=True)
-    death_date = models.DateField(null=True)
 
     def __str__(self):
         return self.name
@@ -14,14 +12,12 @@ class Person(models.Model):
 
 class Movie(models.Model):
     title = models.CharField(max_length=255)
-    synopsis = models.TextField(blank=True)
     genre = models.CharField(choices=MOVIE_GENRES, max_length=255)
     release_date = models.DateField(null=True)
     cast = models.ManyToManyField(Person, related_name="movies_starred")
     director = models.ForeignKey(
         Person, related_name="movies_directed", null=True, on_delete=models.SET_NULL
     )
-    is_available_on_netflix = models.BooleanField(default=False)
     imdb_rate = models.FloatField(null=True)
 
     def __str__(self):

@@ -9,259 +9,192 @@ from cinema.models import *
 def create_actors():
     Person.objects.bulk_create(
         [
+            Person(name="Ana de Armas"),
             Person(
-                name="Ana de Armas", birth_date=datetime(1988, 4, 30, 3, 59, 0, 99999, tzinfo=utc)
+                name="Ben Affleck"
             ),
             Person(
-                name="Ben Affleck", birth_date=datetime(1972, 8, 15, 3, 59, 0, 99999, tzinfo=utc)
+                name="Jacob Elordi"
             ),
             Person(
-                name="Jacob Elordi", birth_date=datetime(1997, 6, 26, 3, 59, 0, 99999, tzinfo=utc)
+                name="Finn Wittrock"
             ),
             Person(
-                name="Finn Wittrock", birth_date=datetime(1984, 10, 28, 3, 59, 0, 99999, tzinfo=utc)
+                name="Rachel Blanchard"
             ),
             Person(
-                name="Rachel Blanchard",
-                birth_date=datetime(1976, 3, 19, 3, 59, 0, 99999, tzinfo=utc),
+                name="Michael Keaton"
             ),
             Person(
-                name="Michael Keaton",
-                birth_date=datetime(1951, 9, 5, 3, 59, 0, 99999, tzinfo=utc),
+                name="Michelle Pfeiffer"
             ),
             Person(
-                name="Michelle Pfeiffer",
-                birth_date=datetime(1958, 4, 29, 3, 59, 0, 99999, tzinfo=utc),
+                name="Danny DeVito"
             ),
             Person(
-                name="Danny DeVito",
-                birth_date=datetime(1944, 11, 17, 3, 59, 0, 99999, tzinfo=utc),
+                name="Christopher Walken"
             ),
             Person(
-                name="Christopher Walken",
-                birth_date=datetime(1943, 3, 31, 3, 59, 0, 99999, tzinfo=utc),
+                name="Michael Gough"
             ),
             Person(
-                name="Michael Gough",
-                birth_date=datetime(1916, 11, 23, 3, 59, 0, 99999, tzinfo=utc),
-                death_date=datetime(2011, 3, 17, 3, 59, 0, 99999, tzinfo=utc),
+                name="Pat Hingle"
             ),
             Person(
-                name="Pat Hingle",
-                birth_date=datetime(1924, 7, 19, 3, 59, 0, 99999, tzinfo=utc),
-                death_date=datetime(2009, 1, 3, 3, 59, 0, 99999, tzinfo=utc),
+                name="Jack Nicholson"
             ),
             Person(
-                name="Jack Nicholson",
-                birth_date=datetime(1937, 4, 22, 3, 59, 0, 99999, tzinfo=utc),
+                name="Kim Basinger"
             ),
             Person(
-                name="Kim Basinger",
-                birth_date=datetime(1953, 12, 8, 3, 59, 0, 99999, tzinfo=utc),
+                name="Christian Bale"
             ),
             Person(
-                name="Christian Bale",
-                birth_date=datetime(1974, 1, 30, 3, 59, 0, 99999, tzinfo=utc),
+                name="Cillian Murphy"
             ),
             Person(
-                name="Cillian Murphy",
-                birth_date=datetime(1976, 5, 25, 3, 59, 0, 99999, tzinfo=utc),
+                name="Michael Caine"
             ),
             Person(
-                name="Michael Caine",
-                birth_date=datetime(1933, 3, 14, 3, 59, 0, 99999, tzinfo=utc),
+                name="Katie Holmes"
             ),
             Person(
-                name="Katie Holmes",
-                birth_date=datetime(1978, 12, 18, 3, 59, 0, 99999, tzinfo=utc),
+                name="Liam Neeson"
             ),
             Person(
-                name="Liam Neeson",
-                birth_date=datetime(1952, 6, 7, 3, 59, 0, 99999, tzinfo=utc),
+                name="Gary Oldman"
             ),
             Person(
-                name="Gary Oldman",
-                birth_date=datetime(1958, 3, 21, 3, 59, 0, 99999, tzinfo=utc),
+                name="Morgan Freeman"
             ),
             Person(
-                name="Morgan Freeman",
-                birth_date=datetime(1937, 6, 1, 3, 59, 0, 99999, tzinfo=utc),
+                name="Heath Ledger"
             ),
             Person(
-                name="Heath Ledger",
-                birth_date=datetime(1979, 4, 4, 3, 59, 0, 99999, tzinfo=utc),
-                death_date=datetime(2008, 1, 22, 3, 59, 0, 99999, tzinfo=utc),
+                name="Aaron Eckhart"
             ),
             Person(
-                name="Aaron Eckhart",
-                birth_date=datetime(1968, 1, 12, 3, 59, 0, 99999, tzinfo=utc),
+                name="Tom Hardy"
             ),
             Person(
-                name="Tom Hardy",
-                birth_date=datetime(1977, 9, 15, 3, 59, 0, 99999, tzinfo=utc),
+                name="Anne Hathaway"
             ),
             Person(
-                name="Anne Hathaway",
-                birth_date=datetime(1982, 11, 12, 3, 59, 0, 99999, tzinfo=utc),
+                name="Joseph Gordon-Levitt"
             ),
             Person(
-                name="Joseph Gordon-Levitt",
-                birth_date=datetime(1981, 2, 17, 3, 59, 0, 99999, tzinfo=utc),
+                name="Marion Cotillard"
             ),
             Person(
-                name="Marion Cotillard",
-                birth_date=datetime(1975, 9, 30, 3, 59, 0, 99999, tzinfo=utc),
+                name="Brad Pitt"
             ),
             Person(
-                name="Brad Pitt",
-                birth_date=datetime(1963, 12, 18, 3, 59, 0, 99999, tzinfo=utc),
+                name="Christoph Waltz"
             ),
             Person(
-                name="Christoph Waltz",
-                birth_date=datetime(1956, 10, 4, 3, 59, 0, 99999, tzinfo=utc),
+                name="Eli Roth"
             ),
             Person(
-                name="Eli Roth",
-                birth_date=datetime(1972, 4, 18, 3, 59, 0, 99999, tzinfo=utc),
+                name="Diane Kruger"
             ),
             Person(
-                name="Diane Kruger",
-                birth_date=datetime(1976, 7, 15, 3, 59, 0, 99999, tzinfo=utc),
+                name="Mélanie Laurent"
             ),
             Person(
-                name="Mélanie Laurent",
-                birth_date=datetime(1983, 2, 21, 3, 59, 0, 99999, tzinfo=utc),
+                name="Daniel Brühl"
             ),
             Person(
-                name="Daniel Brühl",
-                birth_date=datetime(1978, 6, 16, 3, 59, 0, 99999, tzinfo=utc),
+                name="Leonardo Dicaprio"
             ),
             Person(
-                name="Leonardo Dicaprio",
-                birth_date=datetime(1974, 11, 11, 3, 59, 0, 99999, tzinfo=utc),
+                name="Margot Robbie"
             ),
             Person(
-                name="Margot Robbie",
-                birth_date=datetime(1990, 7, 2, 3, 59, 0, 99999, tzinfo=utc),
+                name="Margaret Qualley"
             ),
             Person(
-                name="Margaret Qualley",
-                birth_date=datetime(1994, 10, 23, 3, 59, 0, 99999, tzinfo=utc),
+                name="Austin Butler"
             ),
             Person(
-                name="Austin Butler",
-                birth_date=datetime(1991, 8, 17, 3, 59, 0, 99999, tzinfo=utc),
+                name="Dakota Fanning"
             ),
             Person(
-                name="Dakota Fanning",
-                birth_date=datetime(1994, 2, 23, 3, 59, 0, 99999, tzinfo=utc),
+                name="Chris Evans"
             ),
             Person(
-                name="Chris Evans",
-                birth_date=datetime(1981, 6, 13, 3, 59, 0, 99999, tzinfo=utc),
+                name="Daniel Craig"
             ),
             Person(
-                name="Daniel Craig",
-                birth_date=datetime(1968, 3, 2, 3, 59, 0, 99999, tzinfo=utc),
+                name="Jamie Lee Curtis"
             ),
             Person(
-                name="Jamie Lee Curtis",
-                birth_date=datetime(1958, 11, 22, 3, 59, 0, 99999, tzinfo=utc),
+                name="Christopher Plummer"
             ),
             Person(
-                name="Christopher Plummer",
-                birth_date=datetime(1929, 12, 13, 3, 59, 0, 99999, tzinfo=utc),
+                name="Katherine Langford"
             ),
             Person(
-                name="Katherine Langford",
-                birth_date=datetime(1996, 4, 29, 3, 59, 0, 99999, tzinfo=utc),
+                name="Mark Ruffalo"
             ),
             Person(
-                name="Mark Ruffalo",
-                birth_date=datetime(1967, 11, 22, 3, 59, 0, 99999, tzinfo=utc),
+                name="Ben Kingsley"
             ),
             Person(
-                name="Ben Kingsley",
-                birth_date=datetime(1943, 12, 31, 3, 59, 0, 99999, tzinfo=utc),
+                name="Michelle Williams"
             ),
             Person(
-                name="Michelle Williams",
-                birth_date=datetime(1980, 9, 9, 3, 59, 0, 99999, tzinfo=utc),
+                name="Max von Sydow"
             ),
             Person(
-                name="Max von Sydow",
-                birth_date=datetime(1929, 4, 10, 3, 59, 0, 99999, tzinfo=utc),
-                death_date=datetime(2020, 3, 8, 3, 59, 0, 99999, tzinfo=utc),
+                name="Patricia Clarkson"
             ),
             Person(
-                name="Patricia Clarkson",
-                birth_date=datetime(1959, 12, 29, 3, 59, 0, 99999, tzinfo=utc),
+                name="Robert De Niro"
             ),
             Person(
-                name="Robert De Niro",
-                birth_date=datetime(1943, 8, 17, 3, 59, 0, 99999, tzinfo=utc),
+                name="Famke Janssen"
             ),
             Person(
-                name="Famke Janssen",
-                birth_date=datetime(1964, 11, 5, 3, 59, 0, 99999, tzinfo=utc),
+                name="Jennifer Garner"
             ),
             Person(
-                name="Jennifer Garner",
-                birth_date=datetime(1972, 4, 17, 3, 59, 0, 99999, tzinfo=utc),
+                name="Christa B. Allen"
             ),
             Person(
-                name="Christa B. Allen",
-                birth_date=datetime(1991, 11, 11, 3, 59, 0, 99999, tzinfo=utc),
+                name="Judy Greer"
             ),
             Person(
-                name="Judy Greer",
-                birth_date=datetime(1975, 7, 20, 3, 59, 0, 99999, tzinfo=utc),
+                name="Andy Serkis"
             ),
             Person(
-                name="Andy Serkis",
-                birth_date=datetime(1964, 4, 20, 3, 59, 0, 99999, tzinfo=utc),
+                name="Jennifer Lawrence"
             ),
             Person(
-                name="Jennifer Lawrence",
-                birth_date=datetime(1990, 8, 15, 3, 59, 0, 99999, tzinfo=utc),
+                name="Timothée Chalamet"
             ),
             Person(
-                name="Timothée Chalamet",
-                birth_date=datetime(1995, 12, 27, 3, 59, 0, 99999, tzinfo=utc),
+                name="Cate Blanchett"
             ),
             Person(
-                name="Cate Blanchett",
-                birth_date=datetime(1969, 5, 14, 3, 59, 0, 99999, tzinfo=utc),
+                name="Meryl Streep"
             ),
             Person(
-                name="Meryl Streep",
-                birth_date=datetime(1949, 6, 22, 3, 59, 0, 99999, tzinfo=utc),
+                name="Ariana Grande"
             ),
             Person(
-                name="Ariana Grande",
-                birth_date=datetime(1993, 6, 26, 3, 59, 0, 99999, tzinfo=utc),
+                name="Ewan McGregor"
             ),
             Person(
-                name="Ewan McGregor",
-                birth_date=datetime(1971, 3, 31, 3, 59, 0, 99999, tzinfo=utc),
+                name="Albert Finney"
             ),
             Person(
-                name="Albert Finney",
-                birth_date=datetime(1936, 5, 9, 3, 59, 0, 99999, tzinfo=utc),
-                death_date=datetime(2019, 2, 7, 3, 59, 0, 99999, tzinfo=utc),
+                name="Helena Bonham Carter"
             ),
             Person(
-                name="Helena Bonham Carter",
-                birth_date=datetime(1966, 5, 26, 3, 59, 0, 99999, tzinfo=utc),
+                name="Billy Crudup"
             ),
             Person(
-                name="Billy Crudup",
-                birth_date=datetime(1968, 7, 8, 3, 59, 0, 99999, tzinfo=utc),
-            ),
-            Person(
-                name="Matthew McGrory",
-                birth_date=datetime(1973, 5, 17, 3, 59, 0, 99999, tzinfo=utc),
-                death_date=datetime(2005, 8, 9, 3, 59, 0, 99999, tzinfo=utc),
+                name="Matthew McGrory"
             ),
         ]
     )
@@ -270,41 +203,15 @@ def create_actors():
 def create_directors():
     Person.objects.bulk_create(
         [
-            Person(
-                name="Adrian Lyne", birth_date=datetime(1941, 3, 4, 3, 59, 0, 99999, tzinfo=utc)
-            ),
-            Person(
-                name="Tim Burton", birth_date=datetime(1958, 8, 25, 3, 59, 0, 99999, tzinfo=utc)
-            ),
-            Person(
-                name="Christopher Nolan",
-                birth_date=datetime(1970, 7, 30, 3, 59, 0, 99999, tzinfo=utc),
-            ),
-            Person(
-                name="Quentin Tarantino",
-                birth_date=datetime(1963, 3, 27, 3, 59, 0, 99999, tzinfo=utc),
-            ),
-            Person(
-                name="Rian Johnson",
-                birth_date=datetime(1973, 12, 17, 3, 59, 0, 99999, tzinfo=utc),
-            ),
-            Person(
-                name="Martin Scorsese",
-                birth_date=datetime(1942, 11, 17, 3, 59, 0, 99999, tzinfo=utc),
-            ),
-            Person(
-                name="John Polson",
-                birth_date=datetime(1965, 9, 6, 3, 59, 0, 99999, tzinfo=utc),
-            ),
-            Person(
-                name="Gary Winick",
-                birth_date=datetime(1961, 3, 31, 3, 59, 0, 99999, tzinfo=utc),
-                death_date=datetime(2011, 2, 27, 3, 59, 0, 99999, tzinfo=utc),
-            ),
-            Person(
-                name="Adam McKay",
-                birth_date=datetime(1968, 4, 17, 3, 59, 0, 99999, tzinfo=utc),
-            ),
+            Person(name="Adrian Lyne"),
+            Person(name="Tim Burton"),
+            Person(name="Christopher Nolan"),
+            Person(name="Quentin Tarantino"),
+            Person(name="Rian Johnson"),
+            Person(name="Martin Scorsese"),
+            Person(name="John Polson"),
+            Person(name="Gary Winick"),
+            Person(name="Adam McKay"),
         ]
     )
 
@@ -314,11 +221,6 @@ def create_movies():
         [
             Movie(
                 title="Deep Water",
-                synopsis=(
-                    "Vic and Melinda, a married couple, fall out of love with each other and the "
-                    "latter pursues extramarital affairs. However, when her lovers all disappear, "
-                    "the suspicion falls on Vic."
-                ),
                 genre=MOVIE_GENRES.drama,
                 release_date=datetime(2022, 4, 18, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=False,
@@ -327,11 +229,6 @@ def create_movies():
             ),
             Movie(
                 title="Batman",
-                synopsis=(
-                    "When Max, an entrepreneur, and criminal Penguin team up to wreak havoc in "
-                    "Gotham City, Batman decides to stop them. Catwoman's alter ego, Selina Kyle, "
-                    "seeks revenge on Max for trying to kill her."
-                ),
                 genre=MOVIE_GENRES.action,
                 release_date=datetime(1989, 10, 26, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=False,
@@ -340,11 +237,6 @@ def create_movies():
             ),
             Movie(
                 title="Batman Returns",
-                synopsis=(
-                    "When Max, an entrepreneur, and criminal Penguin team up to wreak havoc in "
-                    "Gotham City, Batman decides to stop them. Catwoman's alter ego, Selina Kyle, "
-                    "seeks revenge on Max for trying to kill her."
-                ),
                 genre=MOVIE_GENRES.action,
                 release_date=datetime(1992, 7, 3, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=False,
@@ -353,11 +245,6 @@ def create_movies():
             ),
             Movie(
                 title="Batman Begins",
-                synopsis=(
-                    "After witnessing his parents' death, Bruce learns the art of fighting to "
-                    "confront injustice. When he returns to Gotham as Batman, he must stop a secret"
-                    " society that intends to destroy the city."
-                ),
                 genre=MOVIE_GENRES.action,
                 release_date=datetime(2005, 6, 17, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=False,
@@ -366,11 +253,6 @@ def create_movies():
             ),
             Movie(
                 title="The Dark Knight",
-                synopsis=(
-                    "After Gordon, Dent and Batman begin an assault on Gotham's organised crime, "
-                    "the mobs hire the Joker, a psychopathic criminal mastermind who offers to kill"
-                    " Batman and bring the city to its knees."
-                ),
                 genre=MOVIE_GENRES.action,
                 release_date=datetime(2008, 7, 18, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=False,
@@ -379,11 +261,6 @@ def create_movies():
             ),
             Movie(
                 title="The Dark Knight Rises",
-                synopsis=(
-                    "Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-"
-                    "long period of peace. This forces Bruce Wayne to come out of hiding and don "
-                    "the cape and cowl of Batman again."
-                ),
                 genre=MOVIE_GENRES.action,
                 release_date=datetime(2012, 7, 27, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=False,
@@ -392,11 +269,6 @@ def create_movies():
             ),
             Movie(
                 title="Inglourious Basterds",
-                synopsis=(
-                    "A few Jewish soldiers are on an undercover mission to bring down the Nazi "
-                    "government and put an end to the war. Meanwhile, a woman wants to avenge the "
-                    "death of her family from a German officer."
-                ),
                 genre=MOVIE_GENRES.action,
                 release_date=datetime(2009, 10, 9, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=False,
@@ -405,11 +277,6 @@ def create_movies():
             ),
             Movie(
                 title="Once Upon a Time in... Hollywood",
-                synopsis=(
-                    "Rick, a washed-out actor, and Cliff, his stunt double, struggle to recapture "
-                    "fame and success in 1960s Los Angeles. Meanwhile, living next door to Rick is "
-                    "Sharon Tate and her husband Roman Polanski."
-                ),
                 genre=MOVIE_GENRES.comedy,
                 release_date=datetime(2019, 8, 15, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=True,
@@ -418,11 +285,6 @@ def create_movies():
             ),
             Movie(
                 title="Knives Out",
-                synopsis=(
-                    "Harlan Thrombey, a reputable crime novelist, is found dead after his 85th "
-                    "birthday celebrations. However, as detective Benoit Blanc investigates the "
-                    "case, it unravels a ploy of sinister intentions."
-                ),
                 genre=MOVIE_GENRES.mystery,
                 release_date=datetime(2019, 12, 5, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=False,
@@ -431,11 +293,6 @@ def create_movies():
             ),
             Movie(
                 title="Shutter Island",
-                synopsis=(
-                    "Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a "
-                    "remote island in order to investigate the disappearance of a patient, where "
-                    "Teddy uncovers a shocking truth about the place."
-                ),
                 genre=MOVIE_GENRES.mystery,
                 release_date=datetime(2010, 3, 12, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=True,
@@ -444,11 +301,6 @@ def create_movies():
             ),
             Movie(
                 title="Hide and Seek",
-                synopsis=(
-                    "After his wife's death, David moves to Upstate New York with his daughter "
-                    "Emily, who makes an imaginary friend named Charlie. But soon unexplained "
-                    "events begin taking place in their house."
-                ),
                 genre=MOVIE_GENRES.mystery,
                 release_date=datetime(2005, 1, 28, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=True,
@@ -457,10 +309,6 @@ def create_movies():
             ),
             Movie(
                 title="13 Going on 30",
-                synopsis=(
-                    "Jenna Rink makes an unusual wish on her birthday. Miraculously, her wish comes"
-                    " true and the 13-year-old Jenna wakes up the next day as a 30-year-old woman."
-                ),
                 genre=MOVIE_GENRES.romance,
                 release_date=datetime(2004, 4, 23, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=True,
@@ -469,10 +317,6 @@ def create_movies():
             ),
             Movie(
                 title="Don't Look Up",
-                synopsis=(
-                    "Two low-level astronomers must go on a giant media tour to warn mankind of an "
-                    "approaching comet that will destroy planet Earth."
-                ),
                 genre=MOVIE_GENRES.comedy,
                 release_date=datetime(2021, 12, 9, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=True,
@@ -481,11 +325,6 @@ def create_movies():
             ),
             Movie(
                 title="Big Fish",
-                synopsis=(
-                    "Will Bloom returns home to care for his dying father, who had a penchant for "
-                    "telling unbelievable stories. After he passes away, Will tries to find out if "
-                    "his tales were really true."
-                ),
                 genre=MOVIE_GENRES.fantasy,
                 release_date=datetime(2004, 2, 20, 3, 59, 0, 99999, tzinfo=utc),
                 is_available_on_netflix=False,
