@@ -1,0 +1,7 @@
+<h2>Artists List</h2>
+{% for artist in object_list %}
+   <div style="padding: 5px 0; border-bottom: 1px solid palevioletred;">
+       <div style="font-weight: 600;">{{ artist.name }}</div>
+       <div>Total awards won: {{ artist.total_awards_won }}</div>
+   </div>
+{% endfor %}

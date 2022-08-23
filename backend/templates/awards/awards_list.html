@@ -1,0 +1,7 @@
+<h2>Awards List</h2>
+{% for award in object_list %}
+   <div style="padding: 5px 0; border-bottom: 1px solid palevioletred;">
+       <div style="font-weight: 600;">{{ award.name }}</div>
+       <div>Most Nominated Movie: <i>{{ award.most_nominated_movie_title }}</i></div>
+   </div>
+{% endfor %}
